@@ -1,0 +1,112 @@
+\documentclass[journal,transmag]{IEEEtran}
+
+\usepackage{cite}
+\usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+\graphicspath{IMAGES/}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.jpg}
+\usepackage{amsmath}
+\interdisplaylinepenalty=2500
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfon =sf]{subfig}
+\usepackage{dblfloatfix}
+\usepackage{url}
+\usepackage{lipsum}
+% correct bad hyphenation here
+\hyphenation{fuck-ing}
+
+\begin{document}
+
+\title{Sam's Fucking Great IEEE Transaction \LaTeX\ Template}
+
+\author{\IEEEauthorblockN{Sam Dixon, 40056761\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Computing,
+Edinburgh Napier University, Edinburgh}% <-this % stops an unwanted space
+
+\thanks{You can put a fucking thank you here, or maybe the date you submitted the fucking paper.}}
+
+
+\markboth{What a fucking fantastic header}{}
+% The only time the second header will appear is for the odd numbered pages after the title page when using the twoside option.
+
+\IEEEtitleabstractindextext{
+\begin{abstract}
+	The fucking abstract goes here.
+\end{abstract}
+
+\begin{IEEEkeywords}
+	IEEE, IEEEtran, IEEE Transactions on Magnetics, journal, \LaTeX, magnetics, paper, template, fuck.
+\end{IEEEkeywords}}
+
+\maketitle
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+ 
+\IEEEPARstart{F}{uck}, this is a template for fucking IEEE transaction reports. \textsc{This bit of text is fucking different.} \LaTeX\ is dead, I don't think anyone actual uses it, and we are all being strung along on a terrible joke.
+
+\section{Section 1}
+	\lipsum[1-2]
+	This is how you fucking cite something \cite{mrx05}
+	
+\section{Section 2}
+	\lipsum[3-5]
+
+\section{Section 3}
+	\lipsum[6-8]
+
+\section{Section 3}
+	\lipsum[9-10]
+	
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width= 0.5\textwidth]{IMAGES/exampleImage}
+	\caption{A Fucking Sad Frog.}
+	\label{fig_frog}
+\end{figure}
+
+\begin{figure}[!t]
+	\centering
+	\includegraphics[width= 0.5\textwidth]{IMAGES/fig2}
+	\caption{A Fucking Pupper.}
+	\label{fig_pup}
+\end{figure}
+
+\begin{table}[!t]
+	\renewcommand{\arraystretch}{1.3}
+	\caption{An Example of a fucking Table}
+	\label{table_example}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		One & Two\\
+		\hline
+		Three & Fuck\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\section{Conclusion}
+The fucking conclusion goes here.
+
+\newpage
+
+\appendices
+\section{Proof of fucking something}
+	Appendix one text goes fucking here.
+
+\section{}
+	Fucking appendix two text goes here.
+
+\section*{Acknowledgment}
+	The author would like to fucking thank...
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib}
+
+\end{document}
