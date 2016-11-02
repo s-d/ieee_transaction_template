@@ -13,6 +13,35 @@
 \usepackage{dblfloatfix}
 \usepackage{url}
 \usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+	escapeinside={/*@}{@*/},
+	language=Java,	
+	basicstyle=\fontsize{8.5}{12}\selectfont,
+	numbers=left,
+	numbersep=2pt,    
+	xleftmargin=2pt,
+	frame=tb,
+	columns=fullflexible,
+	showstringspaces=false,
+	tabsize=4,
+	keepspaces=true,
+	showtabs=false,
+	showspaces=false,
+	morekeywords={inline,public,class,private,protected,struct},
+	captionpos=b,
+	lineskip=-0.4em,
+	aboveskip=10pt,
+	extendedchars=true,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
 % correct bad hyphenation here
 \hyphenation{fuck-ing}
 
@@ -53,13 +82,16 @@ Edinburgh Napier University, Edinburgh}% <-this % stops an unwanted space
 	\lipsum[1-2]
 	This is how you fucking cite something \cite{mrx05}
 	
+	\subsection{A fucking subsection}
+		\lstinputlisting[caption = A fucking code listing.]{./sourceCode/hello.cpp}
+	
 \section{Section 2}
 	\lipsum[3-5]
 
 \section{Section 3}
 	\lipsum[6-8]
-
-\section{Section 3}
+	
+\section{Section 4}
 	\lipsum[9-10]
 	
 \begin{figure}[!t]
